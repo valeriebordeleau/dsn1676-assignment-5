@@ -9,7 +9,7 @@ $form.on('submit',function (eventObject) {
      var $listItem = $('<li>');
      $listItem.html($input.val())
      
-     $addToList.append($listItem) .addClass($priority.val());
+     $addToList.append($listItem).addClass($priority.val());
      
      $input.val('');
     
