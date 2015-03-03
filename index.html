@@ -12,16 +12,23 @@
 
 <div class="list-area">
 <h1 class="yotta text-center title island-half">To Do List</h1>  
-
-    <form class="pad-half-top text-center">
+        
+    <feildset class="island">
+    <input type="radio" id="low-priority" name="priority">
+    <label for="low-priority">Low Priority</label>    
+    <input type="radio" id="high-priority" name="priority">
+    <label for="high-priority">High Priority</label> 
+    </feildset>
+    </form>
+    
+    <form class="pad-top">
     <label for="add-item">What do you need to do?</label>
     <input id="add-item">
     <button class="button" type="submit">Add Item</button>
-    </form>
     
     <ol class="list">
-        
     </ol>
+        
     </div>
     
 

@@ -42,3 +42,8 @@ html {
     border: 2px solid #E3F1FF;
     border-radius: 20px;
 }
+
+.grey-out {
+    color: grey;
+    text-decoration: line-through;
+}

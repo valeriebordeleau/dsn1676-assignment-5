@@ -1,6 +1,7 @@
 var $form = $('form');
-var $addToList = $('.list')
-var $input = $('#add-item')
+var $addToList = $('.list');
+var $input = $('#add-item');
+var $li =$('.list li');
 
 $form.on('submit',function (eventObject) {
      eventObject.preventDefault();
@@ -13,7 +14,10 @@ $form.on('submit',function (eventObject) {
      $input.val('');
  });
 
-$form.on('click', function () {
+    $form.on('click', function () {
     var current = $addToList.offset ();
-    $addToList.css('color', grey);
+});
+
+    $addToList.on('click', 'li', function () {
+    $(this).addClass('grey-out');
 });
