@@ -12,3 +12,8 @@ $form.on('submit',function (eventObject) {
      
      $input.val('');
  });
+
+$form.on('click', function () {
+    var current = $addToList.offset ();
+    $addToList.css('color', grey);
+});

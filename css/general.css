@@ -17,6 +17,28 @@ html {
   box-sizing: inherit;
 }
 
-review {
-    font-family: 'Abril Fatface', cursive;
+.list {
+    color: black;
+}
+
+.title {
+    background-color:#B8DBFF;
+    border: 2px dotted black;
+    border-radius: 20px;
+}
+
+.button {
+    padding: 10px;
+    font-family: futura, sans-serif;
+    text-transform: uppercase;
+    border: 2px dotted black;
+    border-radius: 20px;
+    background-color: #B8DBFF;
+}
+
+.list-area {
+    background-color: #E3F1FF;
+    padding: 15px;
+    border: 2px solid #E3F1FF;
+    border-radius: 20px;
 }
