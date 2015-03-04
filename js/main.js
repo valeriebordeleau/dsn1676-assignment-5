@@ -11,10 +11,11 @@ $form.on('submit',function (eventObject) {
     var $priority = $('[name=priority]:checked');
      
     $addToList.append($listItem).addClass($priority.val())
-    $button.append($listItem).addClass($priority.val())
     
-    var $button = $('<button class="delete">X</button>');
+    var $button = $('<button class="delete-button">X</button>');
     $listItem.html($input.val())
+    
+    $listItem.append($button)
     
  });
 

@@ -52,6 +52,16 @@ html {
     display: none;
 }
 
+.delete-button {
+    padding: 2px;
+    font-family: futura, sans-serif;
+    text-transform: uppercase;
+    border: 2px solid #B8DBFF;
+    border-radius: 10px;
+    background-color: #B8DBFF;
+    position: absolute;
+    left: 80%;
+}
 
 .low-priority {
     font-weight: lighter;
@@ -60,3 +70,4 @@ html {
 .high-priority {
     font-weight: bolder;
 }
+
