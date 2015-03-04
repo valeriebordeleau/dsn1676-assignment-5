@@ -5,15 +5,20 @@ var $li =$('.list li');
 var $priority = $('[name=priority]:checked');
 
 $form.on('submit',function (eventObject) {
-     eventObject.preventDefault();
+    eventObject.preventDefault();
      
-     var $listItem = $('<li>');
-     $listItem.html($input.val())
+    var $listItem = $('<li>');
+    $listItem.html($input.val())
      
-     $addToList.append($listItem).addClass($priority.val());
+    $addToList.append($listItem).addClass($priority.val());
    
-    var $listItem = $('<button class="delete">X</button>');
+    var $button = $('<button class="delete">X</button>');
+    $listItem.html($input.val())
     
+    $button.on('click', function () {
+    $li.remove('li');
+    });
+
  });
 
     $form.on('click', function () {
