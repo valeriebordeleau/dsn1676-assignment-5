@@ -27,6 +27,6 @@ $form.on('submit',function (eventObject) {
     $(this).toggleClass('grey-out');
 });
 
-    $addToList.on('submit', 'button', function () {
-    $(this).addClass('delete');
+    $addToList.on('click', 'button', function () {
+    $('li').addClass('delete');
 });
