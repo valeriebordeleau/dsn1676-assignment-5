@@ -14,10 +14,6 @@ $form.on('submit',function (eventObject) {
    
     var $button = $('<button class="delete">X</button>');
     $listItem.html($input.val())
-    
-    $button.on('click', function () {
-    $li.remove('li');
-    });
 
  });
 
