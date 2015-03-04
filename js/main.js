@@ -2,6 +2,7 @@ var $form = $('form');
 var $addToList = $('.list');
 var $input = $('#add-item');
 var $li =$('.list li');
+var $priority = $('[name=priority]:checked');
 
 $form.on('submit',function (eventObject) {
      eventObject.preventDefault();
@@ -13,7 +14,6 @@ $form.on('submit',function (eventObject) {
    
     var $listItem = $('<button class="delete">X</button>');
     
-    var $priority = $('[name=priority]:checked');
  });
 
     $form.on('click', function () {

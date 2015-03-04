@@ -51,3 +51,12 @@ html {
 .delete {
     display: none;
 }
+
+
+.low-priority {
+    font-weight: lighter;
+}
+
+.high-priority {
+    font-weight: bolder;
+}
